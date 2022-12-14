@@ -28,23 +28,23 @@ body {
     right:0;
     height:100%;
     width:100%;
-    background: linear-gradient(179deg, #8400aa, #2a1b2d, #161616);
-    background-size: 600% 600%;
+    background: linear-gradient(359deg, #ba00ff, #0f90a5);
+    background-size: 400% 400%;
 
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
     z-index: -999;
 }
 
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
 }
 form {
     height: 100%;
@@ -61,12 +61,13 @@ form {
     color: lightgray;
     height: 2rem;
     outline: none;
+    box-shadow: 0px 5px 8px #1c1b1b;
 }
   
   input::placeholder {
     font-family: Poppins;
     text-align: center;
-    color: #56646d;
+    color: #839cac;
   }
   
   .display {
@@ -93,6 +94,7 @@ form {
       width: 200px;
       margin: 15px;
       padding: 15px;
+      box-shadow: 0px 2px 8px #1c1b1b;
   }
 
   span:nth-child(2n + 1)::after {
