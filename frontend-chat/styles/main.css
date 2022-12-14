@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Press+Start+2P&display=swap');
+:root {
+    --ascent-color: #111b1f;
+    --background-color: #17252a;
+    --font-color: #a8d8c9;
+    --form-color: #2a3d44;
+    --sub-color: #038058;
+    --button-color: #101a1d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    height: 100%;
+    width: 100vw;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+} 
+
+.bg{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background: linear-gradient(179deg, #8400aa, #2a1b2d, #161616);
+    background-size: 600% 600%;
+
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    z-index: -999;
+}
+
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input {
+    text-align: center;
+    background-color: #2a3942;
+    border: none;
+    border-radius: 3rem;
+    color: lightgray;
+    height: 2rem;
+    outline: none;
+}
+  
+  input::placeholder {
+    font-family: Poppins;
+    text-align: center;
+    color: #56646d;
+  }
+  
+  .display {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+  }
+
+ .display > span{
+    background-color: #2a3d44;
+    font-size: 12px;
+    color: #ca69ca;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+  span {
+      border: none;
+      border-radius: 1rem;
+      width: 200px;
+      margin: 15px;
+      padding: 15px;
+  }
+
+  span:nth-child(2n + 1)::after {
+      display: block;
+      background-color: black;
+      margin-left: 170px;
+      margin-bottom: -30px;
+      background-color: #17252a;
+  }
+
+  span:nth-child(2n + 2)::after {
+    display: block;
+    background-color: black;
+    margin-right: 170px;
+    margin-bottom: -30px;
+    background-color: #101a1d;
+}
+  
+  span:nth-child(2n + 1) {
+    text-align: right;
+    background-color: #070c0e;
+    align-self: flex-end;
+  }
+  
+  span:nth-child(2n + 2) {
+      text-align: left;
+      background-color: #131c1f;
+      align-self: flex-start;
+  }
